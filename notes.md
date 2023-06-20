@@ -4,10 +4,14 @@
 
 # Comparison of server client and standlone solution
 
+## For a single image
 - inferencing of the model takes always the same time (about 0.08 sec)
 - the whole call of the prediction takes also always the same (about 0.14 sec)
 - for the server client version, in addition to the standalone solution, there are about 0.01 sec for handling the request of an image of size (1862 x 1048 px)
 
-# ToDo
-- upload multiple images to request
-- containerize and host with podman (containerd)
+## For two images
+- inferencing of the model takes always the same time (about 0.23 sec)
+- the whole call of the prediction takes also always the same (about 0.28 sec)
+
+# Error handling
+- see http status codes on [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)

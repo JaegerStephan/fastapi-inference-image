@@ -5,8 +5,8 @@ from timeit import default_timer
 url = 'http://localhost:56414/inference'
 
 # Read the image file
-image_file = '../images/dog-and-cat.jpeg'
-files = {'file': open(image_file, 'rb')}
+image_files = ['../images/dog-and-cat.jpeg', '../images/cat.jpeg']
+files = [('files', open(file, 'rb')) for file in image_files]
 
 # Send a POST request to the FastAPI server with the image file
 start = default_timer()

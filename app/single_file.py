@@ -1,8 +1,5 @@
 from fastapi import FastAPI, UploadFile, File
 from PIL import Image
-import torch
-from torchvision import transforms
-from torchvision.models import resnet50, ResNet50_Weights
 import io
 import requests
 import json
