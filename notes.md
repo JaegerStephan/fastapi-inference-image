@@ -13,5 +13,17 @@
 - inferencing of the model takes always the same time (about 0.23 sec)
 - the whole call of the prediction takes also always the same (about 0.28 sec)
 
+
+## Remote call (not localhost)
+- if running client from another machine, the request for two images took about 0.6 sec while the inferencing itself still takes about 0.23 sec
+
+
 # Error handling
 - see http status codes on [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)
+
+# Podman
+
+## Build
+<pre>
+podman build -t computer-vision-lever-variants .
+</pre>

@@ -1,0 +1,13 @@
+version: '3'
+services:
+  computer-vision-lever-variants:
+    image: localhost/computer-vision-lever-variants
+    # mem_limit: 1g
+    # cpus: '0.7'
+    ports:
+      - 54100:80
+    restart: always
+    # resources:
+    #   limits:
+    #     memory: 512M
+    #     cpus: '0.3'

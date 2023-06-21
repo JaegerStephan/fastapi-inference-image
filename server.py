@@ -12,7 +12,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Load the pre-trained model from PyTorch Hub
-model = '../models/resnet101-v2-7.onnx'
+model = 'models/resnet101-v2-7.onnx'
 providers = ['CPUExecutionProvider']
 session = ort.InferenceSession(model, providers=providers)
 
